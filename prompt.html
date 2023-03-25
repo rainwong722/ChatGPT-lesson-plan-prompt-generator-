@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    background-color: #D6E5E3;
+    font-family: sans-serif;
+    color: #2D3319;
+    font-size:120%
+  }
+</style>
+<head>
+    <title>ChatGPT Lesson Plan Prompt Generator</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="grade_level">Grade Level:</label>
+            <select id="grade_level">
+                <option value="P.1">P.1</option>
+                <option value="P.2">P.2</option>
+                <option value="P.3">P.3</option>
+                <option value="P.4">P.4</option>
+                <option value="P.5">P.5</option>
+                <option value="P.6">P.6</option>
+                <option value="F.1">F.1</option>
+                <option value="F.2">F.2</option>
+                <option value="F.3">F.3</option>
+                <option value="F.4">F.4</option>
+                <option value="F.5">F.5</option>
+                <option value="F.6">F.6</option>
+            </select>
+            <br>
+            <br>
+            <label for="subject_area">Subject Area:</label>
+            <input type="text" id="subject_area">
+        </p>
+        <p>
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic">
+        </p>
+        <p>
+            <label for="learning_objectives">Learning Objectives:</label>
+            <textarea id="learning_objectives"></textarea>
+        </p>
+        <p>
+            <label for="assessment_goals">Assessment Goals:</label>
+            <textarea id="assessment_goals"></textarea>
+        </p>
+        <p>
+            <label for="teaching_strategies">Teaching Strategies:</label>
+            <select id="teaching_strategies">
+                <option value="">Select a strategy</option>
+                <option value="Cooperative learning">Cooperative learning</option>
+                <option value="Project-based learning">Project-based learning</option>
+                <option value="Inquiry-based learning">Inquiry-based learning</option>
+                <option value="Flipped classroom">Flipped classroom</option>
+                <option value="Differentiated instruction">Differentiated instruction</option>
+                <option value="Direct instruction">Direct instruction</option>
+                <option value="Experiential learning">Experiential learning</option>
+                <option value="Collaborative learning">Collaborative learning</option>
+                <option value="Game-based learning">Game-based learning</option>
+                <option value="Blended learning">Blended learning</option>
+            </select>
+        </p>
+        <p>
+            <label for="student_interests">Student Interests:</label>
+            <input type="text" id="student_interests">
+        </p>
+        <p>
+            <label for="lesson_duration">Lesson Duration:</label>
+            <input type="text" id="lesson_duration">
+        </p>
+        <p>
+            <button type="button" onclick="generatePrompt()">Generate Prompt</button>
+        </p>
+    </form>
+    <p id="prompt"></p>
+    <script src="prompt.js"></script>
+</body>
+</html>
