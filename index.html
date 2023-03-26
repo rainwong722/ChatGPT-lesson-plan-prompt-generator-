@@ -8,7 +8,7 @@
     font-size:120%
   }
 /* Styles for devices with a screen width of 768px or less */
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px){
   /* Adjust the width of the form inputs */
   input[type="text"],
   select,
@@ -21,6 +21,14 @@
     width: 100%;
     display: block;
   }
+  input[type="text"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
   
   /* Adjust the font size for better readability */
   body {
